@@ -6,9 +6,34 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Unit Conversion - Imperial to Metric</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="container">
+    <div class="header">
+      <h1 class="title">Metric/Imperial Unit Conversion</h1>
+      <label for="input-el"><input type="number" id="input-el" value="20"></label>
+      <button id="convert-btn">Convert</button>
+    </div>
+    <div class="conversions">
+      <div class="conversion-section" id="length-section">
+        <h2 class="conversion-header">Length (Feet/Meter)</h2>
+        <p class="conversion-result" id="length-result">20 feet = 6.096 meters | 20 meters = 65.617 feet</p>
+      </div>
+      <div class="conversion-section" id="volume-section">
+        <h2 class="conversion-header">Volume (Gallons/Liters)</h2>
+        <p class="conversion-result" id="volume-result">20 gallons = 75.7082 liters | 20 liters = 5.2834 gallons</p>
+      </div>
+      <div class="conversion-section" id="mass-section">
+        <h2 class="conversion-header">Mass (Pounds/Kilograms)</h2>
+        <p class="conversion-result" id="mass-result">20 pounds = 9.07184 kilograms | 20 kilograms = 44.09240 pounds</p>
+      </div>
+    </div>
+  </div>
 
-  <script src="scripts.js"></script>
+
+<script src="scripts.js"></script>
 </body>
 </html>

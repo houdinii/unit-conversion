@@ -1,4 +1,115 @@
-body, html{
+:root {
+  box-sizing: border-box;
+
+  --body-bg:               #1C1C1C;
+  --header-bg:             #6943FF;
+  --header-text:           #FFFFFF;
+  --input-border:          #B295FF;
+  --button-text:           #3D3D3D;
+  --conversion-header:     #5A537B;
+  --conversion-text:       #353535;
+  --conversion-section-bg: #FFFFFF;
+  --conversion-bg:         #F4F4F4;
+
+}
+
+[data-theme="dark"] {
+  --body-bg:               #1C1C1C;
+  --header-bg:             #6943FF;
+  --header-text:           #FFFFFF;
+  --input-border:          #B295FF;
+  --button-text:           #3D3D3D;
+  --conversion-header:     #CCC1FF;
+  --conversion-text:       #FFFFFF;
+  --conversion-section-bg: #273549;
+  --conversion-bg:         #1F2937;
+}
+
+body, html, h1, h2{
   margin: 0;
   padding: 0;
+  font-family: Inter, sans-serif;
+}
+
+body{
+  background-color: var(--body-bg);
+  text-align: center;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+  padding: 33px 50px;
+}
+
+.header{
+  padding: 33px 0;
+  margin: 0;
+  background-color: var(--header-bg);
+}
+
+.title {
+  color: var(--header-text);
+  font-size: 28px;
+  line-height: 38px;
+}
+
+#input-el{
+  display: block;
+  margin: 50px auto;
+  width: 130px;
+  height: 83px;
+  border: 2px solid var(--input-border);
+  background-color: transparent;
+  border-radius: 5px;
+  font-size: 56px;
+  font-weight: 800;
+  text-align: center;
+  color: var(--header-text);
+  line-height: 24px;
+}
+
+.conversions {
+  background-color: var(--conversion-bg);
+  padding: 30px 30px;
+  margin: 0;
+}
+
+.conversion-section {
+  padding: 25px;
+  margin-bottom: 20px;
+  background-color: var(--conversion-section-bg);
+}
+
+.conversion-header {
+  color: var(--conversion-header);
+  font-size: 20px;
+}
+
+.conversion-result {
+  color: var(--conversion-text);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+#convert-btn{
+  width: 117px;
+  height: 42px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  border: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
